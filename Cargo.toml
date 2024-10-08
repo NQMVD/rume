@@ -2,5 +2,14 @@
 name = "rume"
 version = "0.1.0"
 edition = "2021"
+description = "rust lume"
+authors = ["Noah <noahbuergler@proton.me"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/NQMVD/rume"
+documentation = "https://docs.rs/rume"
 
 [dependencies]
+mlua = { version = "0.9.9", features = ["luajit", "module"] }
+
+[lib]
+crate-type = ["cdylib"]
